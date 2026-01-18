@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Link } from '@tanstack/react-router'
-import { Sparkles, GraduationCap, Users, Code } from 'lucide-react'
+import { Sparkles, Users, Code } from 'lucide-react'
 import { Container } from '../ui/Container'
 import { Button } from '../ui/Button'
 import { Card, CardContent } from '../ui/Card'
@@ -14,18 +14,13 @@ const highlights = [
   },
   {
     icon: Sparkles,
-    title: 'AI Focus',
-    description: 'Specializing in AI automations',
-  },
-  {
-    icon: GraduationCap,
-    title: 'Cambridge MBA',
-    description: 'Judge Business School',
+    title: 'Craftsmanship',
+    description: 'Agile-trained, raising team standards',
   },
   {
     icon: Users,
-    title: 'Mentorship',
-    description: 'Passionate about growing developers',
+    title: 'Lifelong Learner',
+    description: 'Speaker, mentor, and continuous learner',
   },
 ]
 
@@ -52,7 +47,7 @@ export function About({ preview = false }: AboutProps) {
           </p>
         </motion.div>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {highlights.map((item, index) => (
             <motion.div
               key={item.title}
@@ -98,13 +93,17 @@ export function About({ preview = false }: AboutProps) {
             <div className="prose prose-lg dark:prose-invert mx-auto">
               <p>
                 After 10 years building products at software companies, I made the leap to
-                freelancing to pursue what I&apos;m most passionate about: helping businesses
-                leverage AI to automate their workflows and scale their operations.
+                freelancing to pursue what I&apos;m most passionate about: building web
+                applications that help businesses scale. Trained in agile methodology and
+                committed to software craftsmanship, I take pride in writing clean, maintainable
+                code and raising the standards of every team I work with. Based in Tel Aviv and
+                fluent in both English and Hebrew, I work with clients globally.
               </p>
               <p>
-                My approach combines deep technical expertise with the strategic thinking I
-                developed during my MBA at Cambridge Judge Business School. I don&apos;t just
-                write code—I understand the business problems behind it.
+                I&apos;m a lifelong learner who believes in continuous improvement - both for
+                myself and my teams. My approach combines deep technical expertise with the
+                strategic thinking I developed during my management studies at Cambridge Judge Business School.
+                I don&apos;t just write code - I understand the business problems behind it.
               </p>
               <p>
                 Beyond client work, I&apos;m building towards a vision: creating a team that

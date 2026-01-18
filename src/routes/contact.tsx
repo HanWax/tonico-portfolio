@@ -89,7 +89,7 @@ function ContactPage() {
                 <Mail className="h-5 w-5 text-primary" />
               </div>
               <p className="font-medium">Email</p>
-              <p className="text-sm text-foreground-muted">hello@hannahwaxman.dev</p>
+              <p className="text-sm text-foreground-muted">hannah.waxman8@gmail.com</p>
             </CardContent>
           </Card>
           <Card className="text-center">
@@ -214,7 +214,7 @@ function ContactPage() {
             </p>
             <Card className="overflow-hidden p-0">
               <InlineWidget
-                url="https://calendly.com/your-calendly-url"
+                url="https://calendly.com/hannah-waxman8/30min"
                 styles={{
                   height: '600px',
                   minWidth: '280px',

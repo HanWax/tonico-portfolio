@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link } from '@tanstack/react-router'
 import { Menu, X } from 'lucide-react'
 import { ThemeToggle } from '../ui/ThemeToggle'
+import { Logo } from '../ui/Logo'
 import { cn } from '../../lib/cn'
 
 const navLinks = [
@@ -18,12 +19,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-background/80 backdrop-blur-lg">
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
-        <Link
-          to="/"
-          className="text-xl font-bold tracking-tight"
-        >
-          <span className="gradient-text">tonico</span>
-          <span className="text-foreground-muted"> labs</span>
+        <Link to="/">
+          <Logo size="sm" />
         </Link>
 
         {/* Desktop Navigation */}

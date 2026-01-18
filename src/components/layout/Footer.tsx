@@ -1,11 +1,12 @@
 import { Link } from '@tanstack/react-router'
 import { Github, Linkedin, Twitter, Mail } from 'lucide-react'
+import { Logo } from '../ui/Logo'
 
 const socialLinks = [
-  { href: 'https://github.com/hannahwaxman', icon: Github, label: 'GitHub' },
+  { href: 'https://github.com/hanwax', icon: Github, label: 'GitHub' },
   { href: 'https://linkedin.com/in/hannahwaxman', icon: Linkedin, label: 'LinkedIn' },
   { href: 'https://twitter.com/hannahwaxman', icon: Twitter, label: 'Twitter' },
-  { href: 'mailto:hello@hannahwaxman.dev', icon: Mail, label: 'Email' },
+  { href: 'mailto:hannah.waxman8@gmail.com', icon: Mail, label: 'Email' },
 ]
 
 const footerLinks = [
@@ -23,12 +24,11 @@ export function Footer() {
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
           {/* Logo & Description */}
           <div className="text-center md:text-left">
-            <Link to="/" className="text-xl font-bold">
-              <span className="gradient-text">tonico</span>
-              <span className="text-foreground-muted"> labs</span>
+            <Link to="/">
+              <Logo size="sm" />
             </Link>
             <p className="mt-2 text-sm text-foreground-muted">
-              Freelance Software Developer
+              The technical partner for your business
             </p>
           </div>
 

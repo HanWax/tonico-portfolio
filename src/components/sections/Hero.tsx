@@ -54,8 +54,8 @@ export function Hero() {
             transition={{ delay: 0.3 }}
             className="mt-6 text-lg text-foreground-muted sm:text-xl md:text-2xl"
           >
-            Freelance Software Developer specializing in{' '}
-            <span className="text-foreground font-medium">AI Automations</span>
+            Freelance Web Developer with{' '}
+            <span className="text-foreground font-medium">AI Expertise</span>
           </motion.p>
 
           {/* Description */}
