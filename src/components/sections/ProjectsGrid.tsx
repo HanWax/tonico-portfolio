@@ -43,7 +43,7 @@ export function ProjectsGrid({ projects, preview = false }: ProjectsGridProps) {
               <Card hover className="h-full flex flex-col overflow-hidden p-0">
                 {/* Project Image Placeholder */}
                 <div className="aspect-video bg-gradient-primary opacity-80 flex items-center justify-center">
-                  <span className="text-white/60 text-sm">Project Preview</span>
+                  <span className="text-white/60 text-sm"></span>
                 </div>
 
                 <CardContent className="flex-1 flex flex-col p-6">
