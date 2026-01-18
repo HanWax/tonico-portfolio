@@ -1,6 +1,6 @@
 ---
 title: "Welcome to My Blog"
-date: "2026-01-15"
+date: "2026-01-18"
 excerpt: "Hello! I'm excited to launch my blog where I'll share insights on software development, AI automations, and my journey as a freelance developer."
 tags: ["Personal", "Announcements"]
 author: "Hannah Waxman"
@@ -32,7 +32,7 @@ I plan to write about:
 
 ## A Bit About Me
 
-I bring a unique perspective to software development. Beyond my technical background, I hold an MBA from Cambridge Judge Business School, which has shaped how I approach problems—always with an eye on the business impact.
+I bring a unique perspective to software development. Beyond my technical background, I studied management at Cambridge Judge Business School, which has shaped how I approach problems—always with an eye on the business impact.
 
 I'm also passionate about mentorship. One of my goals is to build a team that employs and develops junior developers through pair programming and hands-on guidance.
 
@@ -42,4 +42,4 @@ I'd love to hear from you! Whether you have questions, feedback, or just want to
 
 Stay tuned for more content coming soon!
 
-— Hannah
+Hannah
