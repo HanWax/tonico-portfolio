@@ -1,5 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { motion } from 'framer-motion'
+import { SEO } from '../../components/SEO'
 import { Container } from '../../components/ui/Container'
 import { GradientText } from '../../components/ui/GradientText'
 import { ProjectsGrid } from '../../components/sections/ProjectsGrid'
@@ -15,6 +16,11 @@ function ProjectsPage() {
 
   return (
     <>
+      <SEO
+        title="Projects"
+        url="/projects"
+        description="Explore software development projects by Tonico Labs. Portfolio showcasing AI automations, full-stack applications, and technical solutions."
+      />
       <section className="py-16">
         <Container>
           <motion.div

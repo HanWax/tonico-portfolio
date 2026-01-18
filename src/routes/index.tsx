@@ -1,4 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
+import { SEO } from '../components/SEO'
 import { Hero } from '../components/sections/Hero'
 import { About } from '../components/sections/About'
 import { Services } from '../components/sections/Services'
@@ -20,6 +21,10 @@ function HomePage() {
 
   return (
     <>
+      <SEO
+        url="/"
+        description="Tonico Labs - Freelance Software Development by Hannah Waxman. Specializing in AI automations, full-stack development, and technical consulting in Tel Aviv."
+      />
       <Hero />
       <About preview />
       <Services />

@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { ArrowLeft, Calendar, Clock, User } from 'lucide-react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import { SEO } from '../../components/SEO'
 import { Container } from '../../components/ui/Container'
 import { GradientText } from '../../components/ui/GradientText'
 import { getPostBySlug } from '../../lib/blog'
@@ -22,20 +23,29 @@ function BlogPostPage() {
   const post = Route.useLoaderData()
 
   return (
-    <section className="py-16">
-      <Container size="sm">
-        <motion.article
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-        >
-          {/* Back Link */}
-          <Link
-            to="/blog"
-            className="inline-flex items-center gap-2 text-foreground-muted hover:text-foreground transition-colors mb-8"
+    <>
+      <SEO
+        title={post.frontmatter.title}
+        url={`/blog/${post.slug}`}
+        description={post.frontmatter.excerpt}
+        type="article"
+        publishedTime={post.frontmatter.date}
+        author={post.frontmatter.author}
+      />
+      <section className="py-16">
+        <Container size="sm">
+          <motion.article
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
           >
-            <ArrowLeft size={16} />
-            Back to Blog
-          </Link>
+            {/* Back Link */}
+            <Link
+              to="/blog"
+              className="inline-flex items-center gap-2 text-foreground-muted hover:text-foreground transition-colors mb-8"
+            >
+              <ArrowLeft size={16} />
+              Back to Blog
+            </Link>
 
           {/* Tags */}
           <div className="flex flex-wrap gap-2 mb-4">
@@ -83,5 +93,6 @@ function BlogPostPage() {
         </motion.article>
       </Container>
     </section>
+    </>
   )
 }

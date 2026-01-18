@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { motion } from 'framer-motion'
 import { Calendar, Clock } from 'lucide-react'
+import { SEO } from '../../components/SEO'
 import { Container } from '../../components/ui/Container'
 import { Card, CardContent } from '../../components/ui/Card'
 import { GradientText } from '../../components/ui/GradientText'
@@ -14,16 +15,22 @@ function BlogPage() {
   const posts = getAllPosts()
 
   return (
-    <section className="py-16">
-      <Container>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-12"
-        >
-          <h1 className="text-4xl font-bold sm:text-5xl">
-            The <GradientText>Blog</GradientText>
-          </h1>
+    <>
+      <SEO
+        title="Blog"
+        url="/blog"
+        description="Read insights on software development, AI automations, and building great products from Tonico Labs by Hannah Waxman."
+      />
+      <section className="py-16">
+        <Container>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-center mb-12"
+          >
+            <h1 className="text-4xl font-bold sm:text-5xl">
+              The <GradientText>Blog</GradientText>
+            </h1>
           <p className="mt-4 text-foreground-muted max-w-2xl mx-auto">
             Thoughts on software development, AI automations, and building great products.
           </p>
@@ -95,5 +102,6 @@ function BlogPage() {
         )}
       </Container>
     </section>
+    </>
   )
 }

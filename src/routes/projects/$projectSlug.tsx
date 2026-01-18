@@ -1,6 +1,7 @@
 import { createFileRoute, Link, notFound } from '@tanstack/react-router'
 import { motion } from 'framer-motion'
 import { ArrowLeft, ExternalLink, Github } from 'lucide-react'
+import { SEO } from '../../components/SEO'
 import { Container } from '../../components/ui/Container'
 import { Button } from '../../components/ui/Button'
 import { GradientText } from '../../components/ui/GradientText'
@@ -21,30 +22,36 @@ function ProjectPage() {
   const project = Route.useLoaderData()
 
   return (
-    <section className="py-16">
-      <Container size="md">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-        >
-          {/* Back Link */}
-          <Link
-            to="/projects"
-            className="inline-flex items-center gap-2 text-foreground-muted hover:text-foreground transition-colors mb-8"
+    <>
+      <SEO
+        title={project.title}
+        url={`/projects/${project.slug}`}
+        description={project.description}
+      />
+      <section className="py-16">
+        <Container size="md">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
           >
-            <ArrowLeft size={16} />
-            Back to Projects
-          </Link>
+            {/* Back Link */}
+            <Link
+              to="/projects"
+              className="inline-flex items-center gap-2 text-foreground-muted hover:text-foreground transition-colors mb-8"
+            >
+              <ArrowLeft size={16} />
+              Back to Projects
+            </Link>
 
-          {/* Project Image Placeholder */}
-          <div className="aspect-video rounded-xl bg-gradient-primary opacity-80 flex items-center justify-center mb-8">
-            <span className="text-white/60">Project Preview</span>
-          </div>
+            {/* Project Image Placeholder */}
+            <div className="aspect-video rounded-xl bg-gradient-primary opacity-80 flex items-center justify-center mb-8">
+              <span className="text-white/60">Project Preview</span>
+            </div>
 
-          {/* Title */}
-          <h1 className="text-3xl font-bold sm:text-4xl mb-4">
-            <GradientText>{project.title}</GradientText>
-          </h1>
+            {/* Title */}
+            <h1 className="text-3xl font-bold sm:text-4xl mb-4">
+              <GradientText>{project.title}</GradientText>
+            </h1>
 
           {/* Tags */}
           <div className="flex flex-wrap gap-2 mb-6">
@@ -87,5 +94,6 @@ function ProjectPage() {
         </motion.div>
       </Container>
     </section>
+    </>
   )
 }

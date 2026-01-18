@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0f"/>
+      <stop offset="100%" style="stop-color:#12121a"/>
+    </linearGradient>
+    <linearGradient id="primaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#3b82f6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+
+  <!-- Decorative gradient orbs -->
+  <circle cx="100" cy="100" r="200" fill="#8b5cf6" opacity="0.1"/>
+  <circle cx="1100" cy="530" r="250" fill="#3b82f6" opacity="0.1"/>
+  <circle cx="900" cy="100" r="150" fill="#8b5cf6" opacity="0.05"/>
+
+  <!-- Logo icon (scaled from favicon) -->
+  <g transform="translate(100, 215)">
+    <rect width="200" height="200" rx="40" fill="url(#primaryGradient)"/>
+    <path d="M60 50 L140 50 L140 70 L110 70 L110 100 L130 150 L70 150 L90 100 L90 70 L60 70 Z" fill="white"/>
+    <circle cx="90" cy="120" r="8" fill="url(#primaryGradient)"/>
+    <circle cx="110" cy="130" r="6" fill="url(#primaryGradient)"/>
+  </g>
+
+  <!-- Text content -->
+  <text x="340" y="280" font-family="Inter, system-ui, sans-serif" font-size="72" font-weight="800" fill="url(#textGradient)">Tonico Labs</text>
+  <text x="340" y="350" font-family="Inter, system-ui, sans-serif" font-size="32" font-weight="500" fill="#f3f4f6">Freelance Software Development</text>
+
+  <!-- Tagline -->
+  <text x="340" y="420" font-family="Inter, system-ui, sans-serif" font-size="24" fill="#9ca3af">AI Automations • Full-Stack Development • Technical Consulting</text>
+
+  <!-- Location -->
+  <g transform="translate(340, 480)">
+    <circle cx="12" cy="0" r="4" fill="#8b5cf6"/>
+    <text x="28" y="6" font-family="Inter, system-ui, sans-serif" font-size="20" fill="#6b7280">Tel Aviv, Israel</text>
+  </g>
+
+  <!-- Bottom accent line -->
+  <rect x="0" y="620" width="1200" height="10" fill="url(#primaryGradient)"/>
+</svg>

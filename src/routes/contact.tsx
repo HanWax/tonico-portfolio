@@ -6,6 +6,7 @@ import { z } from 'zod'
 import { useState } from 'react'
 import { Send, CheckCircle, AlertCircle, Calendar, Mail, MapPin } from 'lucide-react'
 import { InlineWidget } from 'react-calendly'
+import { SEO } from '../components/SEO'
 import { Container } from '../components/ui/Container'
 import { Button } from '../components/ui/Button'
 import { Input, Textarea } from '../components/ui/Input'
@@ -60,16 +61,22 @@ function ContactPage() {
   }
 
   return (
-    <section className="py-16">
-      <Container>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-12"
-        >
-          <h1 className="text-4xl font-bold sm:text-5xl">
-            Get in <GradientText>Touch</GradientText>
-          </h1>
+    <>
+      <SEO
+        title="Contact"
+        url="/contact"
+        description="Get in touch with Tonico Labs. Contact Hannah Waxman for freelance software development, AI automation projects, or technical consulting."
+      />
+      <section className="py-16">
+        <Container>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-center mb-12"
+          >
+            <h1 className="text-4xl font-bold sm:text-5xl">
+              Get in <GradientText>Touch</GradientText>
+            </h1>
           <p className="mt-4 text-foreground-muted max-w-2xl mx-auto">
             Have a project in mind or want to discuss a collaboration?
             I&apos;d love to hear from you.
@@ -232,5 +239,6 @@ function ContactPage() {
         </div>
       </Container>
     </section>
+    </>
   )
 }
