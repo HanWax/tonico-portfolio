@@ -43,11 +43,6 @@ function ProjectPage() {
               Back to Projects
             </Link>
 
-            {/* Project Image Placeholder */}
-            <div className="aspect-video rounded-xl bg-gradient-primary opacity-80 flex items-center justify-center mb-8">
-              <span className="text-white/60">Project Preview</span>
-            </div>
-
             {/* Title */}
             <h1 className="text-3xl font-bold sm:text-4xl mb-4">
               <GradientText>{project.title}</GradientText>
