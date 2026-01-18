@@ -22,8 +22,8 @@ export function Header() {
           to="/"
           className="text-xl font-bold tracking-tight"
         >
-          <span className="gradient-text">Hannah</span>
-          <span className="text-foreground-muted">.dev</span>
+          <span className="gradient-text">tonico</span>
+          <span className="text-foreground-muted"> labs</span>
         </Link>
 
         {/* Desktop Navigation */}

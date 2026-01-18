@@ -24,8 +24,8 @@ export function Footer() {
           {/* Logo & Description */}
           <div className="text-center md:text-left">
             <Link to="/" className="text-xl font-bold">
-              <span className="gradient-text">Hannah</span>
-              <span className="text-foreground-muted">.dev</span>
+              <span className="gradient-text">tonico</span>
+              <span className="text-foreground-muted"> labs</span>
             </Link>
             <p className="mt-2 text-sm text-foreground-muted">
               Freelance Software Developer
@@ -64,7 +64,7 @@ export function Footer() {
 
         <div className="mt-8 border-t border-[var(--border)] pt-8 text-center">
           <p className="text-sm text-foreground-muted">
-            &copy; {new Date().getFullYear()} Hannah Waxman. All rights reserved.
+            &copy; {new Date().getFullYear()} Tonico Labs. All rights reserved.
           </p>
         </div>
       </div>
