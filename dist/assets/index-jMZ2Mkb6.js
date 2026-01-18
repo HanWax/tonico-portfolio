@@ -506,7 +506,7 @@ I plan to write about:
 
 ## A Bit About Me
 
-I bring a unique perspective to software development. Beyond my technical background, I hold an MBA from Cambridge Judge Business School, which has shaped how I approach problems—always with an eye on the business impact.
+I bring a unique perspective to software development. Beyond my technical background, I studied management at the Cambridge Judge Business School, which has shaped how I approach problems—always with an eye on the business impact.
 
 I'm also passionate about mentorship. One of my goals is to build a team that employs and develops junior developers through pair programming and hands-on guidance.
 
@@ -516,7 +516,7 @@ I'd love to hear from you! Whether you have questions, feedback, or just want to
 
 Stay tuned for more content coming soon!
 
-— Hannah
+- Hannah
 `,__viteBrowserExternal={},__viteBrowserExternal$1=Object.freeze(Object.defineProperty({__proto__:null,default:__viteBrowserExternal},Symbol.toStringTag,{value:"Module"})),require$$0=getAugmentedNamespace(__viteBrowserExternal$1);var kindOf,hasRequiredKindOf;function requireKindOf(){if(hasRequiredKindOf)return kindOf;hasRequiredKindOf=1;var e=Object.prototype.toString;kindOf=function(w){if(w===void 0)return"undefined";if(w===null)return"null";var k=typeof w;if(k==="boolean")return"boolean";if(k==="string")return"string";if(k==="number")return"number";if(k==="symbol")return"symbol";if(k==="function")return p(w)?"generatorfunction":"function";if(l(w))return"array";if(x(w))return"buffer";if(y(w))return"arguments";if(d(w))return"date";if(u(w))return"error";if(h(w))return"regexp";switch(a(w)){case"Symbol":return"symbol";case"Promise":return"promise";case"WeakMap":return"weakmap";case"WeakSet":return"weakset";case"Map":return"map";case"Set":return"set";case"Int8Array":return"int8array";case"Uint8Array":return"uint8array";case"Uint8ClampedArray":return"uint8clampedarray";case"Int16Array":return"int16array";case"Uint16Array":return"uint16array";case"Int32Array":return"int32array";case"Uint32Array":return"uint32array";case"Float32Array":return"float32array";case"Float64Array":return"float64array"}if(m(w))return"generator";switch(k=e.call(w),k){case"[object Object]":return"object";case"[object Map Iterator]":return"mapiterator";case"[object Set Iterator]":return"setiterator";case"[object String Iterator]":return"stringiterator";case"[object Array Iterator]":return"arrayiterator"}return k.slice(8,-1).toLowerCase().replace(/\s/g,"")};function a(v){return typeof v.constructor=="function"?v.constructor.name:null}function l(v){return Array.isArray?Array.isArray(v):v instanceof Array}function u(v){return v instanceof Error||typeof v.message=="string"&&v.constructor&&typeof v.constructor.stackTraceLimit=="number"}function d(v){return v instanceof Date?!0:typeof v.toDateString=="function"&&typeof v.getDate=="function"&&typeof v.setDate=="function"}function h(v){return v instanceof RegExp?!0:typeof v.flags=="string"&&typeof v.ignoreCase=="boolean"&&typeof v.multiline=="boolean"&&typeof v.global=="boolean"}function p(v,w){return a(v)==="GeneratorFunction"}function m(v){return typeof v.throw=="function"&&typeof v.return=="function"&&typeof v.next=="function"}function y(v){try{if(typeof v.length=="number"&&typeof v.callee=="function")return!0}catch(w){if(w.message.indexOf("callee")!==-1)return!0}return!1}function x(v){return v.constructor&&typeof v.constructor.isBuffer=="function"?v.constructor.isBuffer(v):!1}return kindOf}/*!
  * is-extendable <https://github.com/jonschlinkert/is-extendable>
  *

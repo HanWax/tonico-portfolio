@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Users, Rocket, GraduationCap } from 'lucide-react'
+import { Users, Rocket, GraduationCap, Heart } from 'lucide-react'
 import { Container } from '../ui/Container'
 import { Card, CardContent } from '../ui/Card'
 import { GradientText } from '../ui/GradientText'
@@ -26,6 +26,13 @@ const communities = [
       'Speaker and mentor at TechGym, where I gave a lecture to the fullstack development group on the shared architectural patterns of my favourite technologies: Git, React and Cursor.',
     url: 'https://techsgym.com/',
   },
+  {
+    icon: Heart,
+    title: 'Palestinian Mentorship Program',
+    description:
+      'Mentor connecting Palestinian tech entrepreneurs with global expertise, helping develop future leaders in Palestine\'s growing startup ecosystem.',
+    url: 'https://www.palinternship.com/',
+  },
 ]
 
 export function Communities() {
@@ -47,7 +54,7 @@ export function Communities() {
           </p>
         </motion.div>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
           {communities.map((community, index) => (
             <motion.div
               key={community.title}
