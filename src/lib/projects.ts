@@ -38,6 +38,7 @@ export const projects: Project[] = [
     description: 'Team lead for four intern development teams, bridging client requirements and engineering execution to deliver software for real clients.',
     longDescription: 'Team lead at Practec, managing four teams of intern developers building software for external clients. Act as the interface between client and team: gathering and clarifying requirements, then translating them into well-scoped, implementable tasks. Keep the teams unblocked, ensure communication flows smoothly in both directions between developers and clients, and provide hands-on technical expertise and guidance on architecture, code quality, and delivery.',
     image: '/images/projects/practec.jpg',
+    logo: '/images/logos/practec.png',
     tags: ['Technical Leadership', 'Mentorship', 'Requirements Analysis', 'Project Management'],
     liveUrl: 'https://www.linkedin.com/company/practec-software/',
     featured: true,
