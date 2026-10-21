@@ -41,10 +41,17 @@ export function ProjectsGrid({ projects, preview = false }: ProjectsGridProps) {
               transition={{ delay: index * 0.1 }}
             >
               <Card hover className="h-full flex flex-col overflow-hidden p-0">
-                {/* Project Image Placeholder */}
-                <div className="aspect-video bg-gradient-primary opacity-80 flex items-center justify-center">
-                  <span className="text-white/60 text-sm"></span>
-                </div>
+                {project.logo ? (
+                  <div className="aspect-video bg-white flex items-center justify-center p-12">
+                    <img
+                      src={project.logo}
+                      alt={`${project.title} logo`}
+                      className="h-20 w-auto max-w-[60%] object-contain"
+                    />
+                  </div>
+                ) : (
+                  <div className="aspect-video bg-gradient-primary opacity-80" />
+                )}
 
                 <CardContent className="flex-1 flex flex-col p-6">
                   <h3 className="text-lg font-semibold text-foreground mb-2">
