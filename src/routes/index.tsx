@@ -16,7 +16,7 @@ export const Route = createFileRoute('/')({
 })
 
 function HomePage() {
-  const featuredProjects = getFeaturedProjects(3)
+  const featuredProjects = getFeaturedProjects(4)
   const recentPosts = getRecentPosts(3)
 
   return (

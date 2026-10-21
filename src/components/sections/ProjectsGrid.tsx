@@ -31,7 +31,7 @@ export function ProjectsGrid({ projects, preview = false }: ProjectsGridProps) {
           </p>
         </motion.div>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2">
           {projects.map((project, index) => (
             <motion.div
               key={project.slug}
