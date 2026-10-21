@@ -24,12 +24,14 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    slug: 'stealth-fintech-startup',
-    title: 'Stealth Fintech Startup',
+    slug: 'efficio',
+    title: 'Efficio',
     description: 'Founding engineer at an early-stage fintech tackling dispute management. Took the product from blank repo to launched platform.',
     longDescription: 'Founding engineering hire at an early-stage fintech tackling the dispute management space. Took the product from a blank repository to a launched platform with paying customers. Owned frontend architecture, technology decisions, testing strategy, and release processes. Built the primary case-management application alongside a second tool that streamlines upstream data, enabling greater automation and helping clients navigate regulatory complexity more efficiently.',
     image: '/images/projects/fintech.jpg',
+    logo: '/images/logos/efficio.png',
     tags: ['TypeScript', 'React', 'Kotlin', 'Spring Boot', 'PostgreSQL', 'AWS', 'Terraform'],
+    liveUrl: 'https://getefficio.ai/',
     featured: true,
   },
   {
